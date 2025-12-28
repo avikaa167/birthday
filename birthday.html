@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday 💗</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#fde2e4;
+      --bg2:#e4f0f6;
+      --bg3:#f3e8ff;
+      --text:#4a4a4a;
+      --accent:#ff9aa2;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Poppins, sans-serif; color:var(--text);
+      overflow:hidden;
+    }
+    .slider{
+      display:flex; width:400vw; height:100vh; transition:transform 1s ease-in-out;
+    }
+    .slide{
+  width:100vw;
+  height:100vh;
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  overflow-y:auto;
+}
+
+    .s1{background:linear-gradient(135deg,var(--bg1),#fff);} 
+    .s2{background:linear-gradient(135deg,var(--bg2),#fff);} 
+    .s3{background:linear-gradient(135deg,var(--bg3),#fff);} 
+    .s4{background:linear-gradient(135deg,#fff0f5,#fff);} 
+
+    h1,h2{
+      font-family:Pacifico; font-weight:400; margin-bottom:20px;
+    }
+    h1{font-size:clamp(36px,5vw,56px);} 
+    h2{font-size:clamp(28px,4vw,42px);} 
+
+    p{
+      max-width:700px; font-size:18px; line-height:1.8;
+    }
+    /* Soft scrollbar */
+.slide::-webkit-scrollbar{
+width:8px;
+}
+.slide::-webkit-scrollbar-track{
+background:rgba(0,0,0,0.05);
+border-radius:10px;
+}
+.slide::-webkit-scrollbar-thumb{
+background:rgba(255,154,162,0.6);
+border-radius:10px;
+}
+
+    button{
+      margin-top:30px; padding:12px 26px; border:none; border-radius:30px;
+      background:var(--accent); color:white; font-size:16px; cursor:pointer;
+      box-shadow:0 8px 20px rgba(0,0,0,.15);
+    }
+
+    /* Love buttons */
+    .btns{display:flex; gap:20px; flex-wrap:wrap; justify-content:center;}
+
+    .nav{
+      position:fixed; bottom:20px; width:100%; text-align:center;
+      font-size:14px; opacity:.7;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slider" id="slider">
+
+  <!-- Slide 1 -->
+  <section class="slide s1">
+    <h1>Happy Birthday 💕</h1>
+    <p>To the one who makes my days softer, brighter, and happier just by existing.</p>
+    <h2>Do you love me? 🥺</h2>
+    <div class="btns">
+      <button onclick="next()">Yes, always</button>
+      <button onclick="next()">Obviously</button>
+    </div>
+  </section>
+
+  <!-- Slide 2 -->
+  <section class="slide s2">
+    <h2>How you make me feel ✨</h2>
+    <p>
+      you are the more trusted person in my life after my parents. You are my safeplace my home and will always be. i am so very grateful for you matlab you cant even imagine what you mean for me thanks for making me feel seen supporting me and most importantly letting me be me. tu ek rare combo hai yaar-annoying aur adorable matlab bhai i just love you. You make me feel as the luckiest person in the world and you know what i actually am. Babe i love you so so so so so so so so muchhhhhhh. tujhse baat karke ek bekar sa din also feels better you make everthing better yaar. I am so obsssessed with you omgggggg
+    </p>
+    <button onclick="next()">Next 💗</button>
+  </section>
+
+  <!-- Slide 3 -->
+  <section class="slide s3">
+    <h2>How important you are to me 🌷</h2>
+    <p style="font-size:15px; line-height:1.9;">
+Jab duniya thodi zyada loud ho jaati hai, tumhari presence sab kuch shaant kar deti hai.
+Tum meri har chhoti khushi ke peeche ho aur meri har mushkil mein sabse pehle yaad aane wale ho.
+Tum mere liye importance ka matlab ho. Tumhare bina din adhoore lagte hain aur tumhare saath
+even normal moments bhi special ban jaate hain. Tum mujhe bina bole samajh lete ho,
+aur wahi baat tumhe mere liye aur bhi zyada precious bana deti hai.
+Main shayad har roz perfect na hoon, par tumhare saath rehkar main hamesha real hoti hoon.
+Tumhara saath, tumhari care, aur tumhara pyaar — ye sab mere liye bohot bohot important hai.
+Aur haan, main ye kabhi lightly nahi leti. Langoor you know that tum mere liye sabse important ho but please prioritise you happiness in front of others.
+</p>
+    <h2>I love you so much(so much more than a friend ofcccs) 💖</h2>
+    <button onclick="next()">One last thing…</button>
+  </section>
+
+    <!-- Slide 4 -->
+  <section class="slide s4">
+    <p><strong>This could be us</strong> 🐱💗</p>
+
+    <div style="margin-top:20px; display:flex; flex-direction:column; align-items:center; gap:16px;">
+      <!-- Cute cats kissing image -->
+      <img
+        src="https://media.tenor.com/ZKlky9PYZUsAAAAj/kiss-cat.gif"
+        alt="Two cats kissing"
+        style="width:260px; max-width:80vw; border-radius:24px; box-shadow:0 12px 30px rgba(0,0,0,.15);"
+      />
+
+      <!-- Your photo (optional) -->
+      
+    </div>
+    <h2 style="margin-top:28px">Always you. Always us. 💗</h2>
+    <p style="margin-top:20px">Happiestttt Birthday, my favorite person ✨</p>
+    <p style="margin-top:20px">I love you to the infinity and backkk💗</p>
+
+    
+  </section>
+
+</div>
+
+
+
+<script>
+let index = 0;
+const slider = document.getElementById('slider');
+const slides = document.querySelectorAll('.slide');
+
+function next(){
+  const currentSlide = slides[index];
+
+  // Check if scrolling is possible
+  if (currentSlide.scrollTop + currentSlide.clientHeight < currentSlide.scrollHeight - 5) {
+    currentSlide.scrollTo({
+      top: currentSlide.scrollTop + currentSlide.clientHeight,
+      behavior: 'smooth'
+    });
+    return;
+  }
+
+  // Move to next slide
+  index = Math.min(index + 1, slides.length - 1);
+  slider.style.transform = `translateX(-${index * 100}vw)`;
+}
+</script>
+
+
+
+</body>
+</html>
